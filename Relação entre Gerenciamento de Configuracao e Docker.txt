@@ -1,0 +1,13 @@
+Relação entre Gerenciamento de Configuração e Docker:
+
+Consistência de Ambiente:
+O Docker oferece ambientes consistentes e isolados, permitindo que os desenvolvedores criem contêineres que contenham todas as dependências necessárias para executar um aplicativo. Isso elimina problemas de "funciona na minha máquina" e garante que o ambiente de desenvolvimento seja o mesmo em todos os estágios do ciclo de vida do software.
+
+Versionamento:
+O Docker permite versionar imagens de contêineres. Isso é semelhante ao conceito de versionamento no Gerenciamento de Configuração, onde as versões de artefatos, como código-fonte e configurações, são controladas. As imagens do Docker podem ser versionadas e referenciadas, proporcionando consistência em diferentes ambientes.
+
+Reprodutibilidade:
+A combinação de Docker e Gerenciamento de Configuração permite a reprodutibilidade consistente de ambientes. O código-fonte versionado junto com as configurações do Docker proporciona uma base sólida para replicar ambientes de desenvolvimento, teste e produção.
+
+Rastreamento de Alterações:
+O Docker registra as alterações em imagens e contêineres, fornecendo um histórico semelhante ao rastreamento de alterações no Gerenciamento de Configuração. Isso é crucial para entender as mudanças ao longo do tempo e facilita a resolução de problemas.

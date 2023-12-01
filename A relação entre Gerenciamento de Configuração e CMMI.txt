@@ -1,0 +1,5 @@
+A relação entre Gerenciamento de Configuração e CMMI reside no fato de que o controle efetivo das configurações do software é um dos elementos-chave para alcançar os níveis mais altos de maturidade no modelo. Isso envolve a identificação e controle rigoroso das configurações, além da gestão adequada das mudanças ao longo do ciclo de vida do desenvolvimento.
+
+A relação entre o Gerenciamento de Configuração e o MPS.BR está na integração das boas práticas do Gerenciamento de Configuração nos processos de desenvolvimento e manutenção de software. O controle eficiente das configurações, a gestão de mudanças e a rastreabilidade são elementos chave para atender aos critérios de qualidade do MPS.BR.
+
+Tanto o CMMI quanto o MPS.BR reconhecem o Gerenciamento de Configuração como uma prática crucial para o desenvolvimento de software de alta qualidade. A implementação adequada dessas práticas contribui significativamente para o alcance de níveis mais elevados de maturidade e qualidade nos processos de desenvolvimento.

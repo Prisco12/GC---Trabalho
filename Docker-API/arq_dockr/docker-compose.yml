@@ -1,0 +1,43 @@
+version: '3.1'
+
+services:
+  nest-app:
+    container_name: nest-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - app-network
+    ports:
+      - 3000:3000
+    restart: unless-stopped
+    depends_on:
+      - mongo
+      - mongo-express
+
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: pass
+
+  mongo-express:
+    image: mongo-express
+    container_name: mongo-express
+    restart: always
+    ports:
+      - 8081:8081 
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_ADMINPASSWORD: pass
+      ME_CONFIG_MONGODB_URL: mongodb://admin:pass@mongo:27017/
+      
+    
+
+
+networks:
+  app-network:
